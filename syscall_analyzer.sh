@@ -1,5 +1,4 @@
 #!/bin/bash
-
 TRACE_FILE="/tmp/strace_out_$$.txt"
 # The list of syscalls required by the assignment
 SYSCALLS="open,openat,read,write,close,execve,fork,clone,mmap,access,stat,fstat,lseek,exit,exit_group"
