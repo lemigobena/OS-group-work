@@ -1,8 +1,8 @@
-# System Call Analyzer — Shell Pro
+# System Call Analyzer---Shell 
 
 ## Project Description
 
-This is a shell program developed for the Operating Systems course at Addis Ababa University. It captures and analyzes the system calls generated when a user executes a command.
+This is a shell program developed for the Operating Systems course at Addis Ababa University by the group members written at the bottom of the page. It captures and analyzes the system calls generated when a user executes a command.
 
 The program uses `strace` to monitor the execution and provides a detailed report for each system call, including:
 
