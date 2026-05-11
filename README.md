@@ -1,33 +1,41 @@
-# System Call Analyzer---Shell 
+# System Call Analyzer Shell
 
-## Project Description
+A professional, terminal-based utility designed to demystify the interaction between user commands and the Linux kernel. This tool captures, analyzes, and explains system calls in real-time using `strace` and system manual pages.
 
-This is a shell program developed for the Operating Systems course at Addis Ababa University by the group members written at the bottom of the page. It captures and analyzes the system calls generated when a user executes a command.
+Developed for the **Operating Systems** course at **Addis Ababa University**.
 
-The program uses `strace` to monitor the execution and provides a detailed report for each system call, including:
+---
 
-- The name and full description of the system call.
-- The parameters passed and their meanings.
+## Key Features
 
-* The returned values and whether the call was successful.
-
-All descriptions are pulled directly from the Linux system manual pages.
+- **Real-time Tracing**: Monitor system calls as they happen during command execution.
+- **Smart Parameter Interpretation**: Automatically resolves symbolic constants (like `O_RDONLY` or `PROT_READ`) and explains their specific meaning.
+- **Integrated Documentation**: Pulls concise descriptions and return value interpretations directly from `man` pages.
+- **Premium Terminal UI**: Uses ANSI color tokens for a high-contrast, readable analysis report.
+- **Automatic Cleanup**: Self-cleaning architecture ensures no temporary trace files are left behind.
 
 ## Supported System Calls
 
-It traces major system calls including: `open`, `openat`, `read`, `write`, `close`, `execve`, `fork`, `clone`, `mmap`, `access`, `stat`, `fstat`, `lseek`, and `exit`.
+The analyzer is optimized for core filesystem, process, and memory management calls:
+`open`, `openat`, `read`, `write`, `close`, `execve`, `fork`, `clone`, `mmap`, `access`, `stat`, `fstat`, `lseek`, `exit`, and `exit_group`.
 
-## How to Run
+---
 
-1. Make the script executable:
+## Getting Started
+
+1. **Clone the repository** (if applicable) and navigate to the project directory.
+2. **Make the script executable**:
    ```bash
-   chmod +x syscall_analyzer.sh
+   chmod +x code.sh
    ```
-2. Run the shell program:
+3. **Launch the shell**:
    ```bash
-   ./syscall_analyzer.sh
+   ./code.sh
    ```
-3. Type any command (e.g., `ls` or `pwd`) to see the analysis.
+4. **Analyze a command**:
+   Simply type any command (e.g., `ls` or `cat test.txt`) inside the `myshell>` prompt to see the step-by-step system call breakdown.
+
+---
 
 ## Group Members
 
@@ -36,3 +44,7 @@ It traces major system calls including: `open`, `openat`, `read`, `write`, `clos
 3. Lemi Gobena
 4. Misganaw Habtamu
 5. Olit Oljira
+
+---
+
+© 2026 Addis Ababa University - Operating Systems Course
